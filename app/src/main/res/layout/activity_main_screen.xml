@@ -26,10 +26,10 @@
             android:textColor="@color/black"/>
 
         <Button
-            android:text="Find A Target"
+            android:text="Start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
+            android:id="@+id/buttonStart"
             android:elevation="0dp"
             style="@style/Widget.AppCompat.Button"
             android:layout_centerVertical="true"
