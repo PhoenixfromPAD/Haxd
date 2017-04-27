@@ -50,7 +50,7 @@ public class HackerActivity extends AppCompatActivity {
 
     private void wireWidgets() {
         progress = (TextView) findViewById(R.id.textViewProgress);
-        download = (ProgressBar) findViewById(R.id.progressBarHacker);
+        download = (ProgressBar) findViewById(R.id.progressBarTarget);
     }
 
 
