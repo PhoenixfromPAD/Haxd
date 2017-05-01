@@ -25,7 +25,7 @@ public class HackerActivity extends AppCompatActivity {
         download.setProgress(0);
         download.setMax(100);
         prog = download.getProgress();
-        final CountDownTimer countDownTimer = new CountDownTimer(100000, 1000) {
+        new CountDownTimer(100000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 download.setProgress(prog += 1);
