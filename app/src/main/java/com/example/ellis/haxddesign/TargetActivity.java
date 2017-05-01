@@ -22,7 +22,7 @@ public class TargetActivity extends AppCompatActivity {
 
         wireWidgets();
         progress.setText("0%");
-        download.setProgress(90);
+        download.setProgress(0);
         download.setMax(100);
         prog = download.getProgress();
         new CountDownTimer(100000, 1000) {
