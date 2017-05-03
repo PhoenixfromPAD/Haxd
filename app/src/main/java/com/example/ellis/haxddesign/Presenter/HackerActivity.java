@@ -1,16 +1,18 @@
-package com.example.ellis.haxddesign;
+package com.example.ellis.haxddesign.Presenter;
 
+import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.ellis.haxddesign.R;
+
 import static com.example.ellis.haxddesign.R.id.coordinatorLayout;
 
-public class TargetActivity extends AppCompatActivity {
+public class HackerActivity extends AppCompatActivity {
     private TextView progress;
     private ProgressBar download;
     private int prog;
@@ -18,7 +20,7 @@ public class TargetActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_target);
+        setContentView(R.layout.activity_hacker);
 
         wireWidgets();
         progress.setText("0%");
@@ -37,7 +39,7 @@ public class TargetActivity extends AppCompatActivity {
             }
 
             public void onFinish() {
-                Snackbar snackbar = Snackbar.make(findViewById(coordinatorLayout), "You Didn't Stop The Hack", Snackbar.LENGTH_INDEFINITE).setAction("Next", new View.OnClickListener() {
+                Snackbar snackbar = Snackbar.make(findViewById(coordinatorLayout), "Hack Complete", Snackbar.LENGTH_INDEFINITE).setAction("Next", new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         //Return to Target Select
@@ -49,7 +51,9 @@ public class TargetActivity extends AppCompatActivity {
     }
 
     private void wireWidgets() {
-        progress = (TextView) findViewById(R.id.textViewProgressTarget);
+        progress = (TextView) findViewById(R.id.textViewProgress);
         download = (ProgressBar) findViewById(R.id.progressBarTarget);
     }
+
+
 }
